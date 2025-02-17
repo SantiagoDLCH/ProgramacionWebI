@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animales Salvajes</title>
+    <style>
+        body 
+        {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        table 
+        {
+            margin: auto;
+            width: 75%;
+        }
+        img 
+        {
+            width: 150px;
+            height: 100px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        iframe 
+        {
+            width: 500px;
+            height: 300px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Animales Salvajes</h1>
+    <table>
+        <tr>
+            <td><img src="Leon.jfif" onclick="mostrarImagen(this.src)"></td>
+            <td><img src="Tigre.jpg" onclick="mostrarImagen(this.src)"></td>
+            <td><img src="Elefante.jfif" onclick="mostrarImagen(this.src)"></td>
+            <td><img src="Lobo.webp" onclick="mostrarImagen(this.src)"></td>
+        </tr>
+    </table>
+    <br>
+    <iframe id="visor" src=""></iframe>    
+    <script>
+        function mostrarImagen(src) 
+        {
+            document.getElementById("visor").src = src;
+        }
+    </script>
+</body>
+</html>
