@@ -1,0 +1,35 @@
+body{
+	background-color: beige;
+}
+
+table{
+	width: 100%;
+	border: 1px solid gray;
+	border-collapse: collapse;
+	caption-side: top;
+}
+
+td, th{
+	border: 1px solid black;
+
+}
+
+/*Fondo para las filas impares*/
+table tr:nth-child(odd){
+	background-color: powderblue;
+}
+
+/*Fondo para las filas pares*/
+table tr:nth-child(even){
+	background-color: lightsteelblue;
+}
+
+table tr th{
+	background-color: navajowhite;
+	color: slategray;
+}
+
+table tr:hover{
+	background-color: cadetblue;
+	color: white;
+}
