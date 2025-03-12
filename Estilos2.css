@@ -21,3 +21,20 @@ li .activo{
 	background-color: darksgreen;
 	color: white;
 }
+h1{
+	font-family: "Lobster", sans-serif;
+}
+
+h2{
+	font-family: "Lora", serif;
+}
+
+@font-face{
+	font-family: "static";
+	src: url("static/RobotoMono-Boldtalic.ttf")	format("truetype");
+}
+p{
+	font-family: "static";
+	font-size: 12px;
+	text-align: justify;
+}
