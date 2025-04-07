@@ -1,0 +1,53 @@
+body {
+    background-color: palegoldenrod;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    color: #2a3b59;
+    
+}
+
+input[type="button"] {
+    display: none;
+}
+
+label[for="mostrar"] {
+    background-color: crimson;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+.galeria {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.imagen img {
+    width: 120px;
+    height: 100px;
+    border: 3px solid black;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+
+label[for="mostrar"]:hover + .galeria,
+label[for="mostrar"]:hover ~ .galeria {
+    display: none;
+}
+
+label[for="mostrar"]:hover {
+    background-color:aqua;
+    transform: scale(1.1);
+}
