@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Obtener datos de formulario con JavaScript</title>
+    <script type="text/JavaScript" src="DatosDeFormulario.js"></script>
+    <link rel="stylesheet" href="P2P3.css">
+</head>
+<body>
+    <h1>Registro de usuario</h1>
+    <form name="formulario">
+        <label for="user">Usuario:</label>
+        <input type="text" name="user" id="user"> <br/>
+
+        <label for="user">Contraseña:</label>
+        <input type="password" name="pass" id="pass"> <br/>
+
+        <label for="carrera">Carrera:</label>
+        <select name="carrera" id="carrera">
+            <option value="ITI">Ing. Tec. de la informacion</option>
+            <option value="ITEM">Ing. Telematica</option>
+        </select> <br/>
+
+        <label for="genero">Genero:</label>
+        <input type="radio" name="genero" value="f">Femenino
+        <input type="radio" name="genero" value="m">Masculino<br/>        
+
+        <label for="casilla">Acepto los terminos y condicines</label>
+        <input type="checkbox" name="casilla" id="casilla"><br/>
+
+        <input type="button" name="envio" id="envio" value="leer datos" onclick="leer()">
+
+    </form>
+    <div id="resultado"> </div>
+</body>
+</html>
